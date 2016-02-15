@@ -1,12 +1,13 @@
-# UBF Context Module
+# ![UBF][ubf-img]
 
-**Universal Binary Format - Context Module**  
+[ubf-img]: http://static.ubfspec.org/img/ubf.svg
+
+**Universal Binary Format (UBF) - Context**  
 **Version 1.0**  
-Working Draft (2015-12-10)
+Working Draft (2016-02-10)
 
-**Dependencies**
-
-- [`Module.Base`](./Module.Base.md)
+#### Dependencies
+- [`Base`](./Base.md)
 
 ## Grammar
 

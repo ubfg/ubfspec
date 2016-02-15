@@ -1,8 +1,10 @@
-# UBF Base Module
+# ![UBF][ubf-img]
 
-**Universal Binary Format - Base Module**  
+[ubf-img]: http://static.ubfspec.org/img/ubf.svg
+
+**Universal Binary Format (UBF) - Base**  
 **Version 1.0**  
-Working Draft (2015-12-10)
+Working Draft (2016-02-10)
 
 ## Data Format
 
@@ -16,7 +18,7 @@ Working Draft (2015-12-10)
 
 `Entry` ... `Key` `Value`
 
-**Key**
+##### Key
 
 - `"\xE0"` `uint8` = number of bytes `{ byte }`
 - `"\xE1"` `uint16` `{ byte }`
@@ -96,7 +98,7 @@ Byte order: [`big-endian`](https://en.wikipedia.org/wiki/Endianness#Big-endian)
 
 ```ebnf
 UBF =                                        (* UBF ----------------------- ! *)
-  ["\xFF" "\x23" "\x42" "\x00"]              (* Magic Number (optional) *)
+  [ "\xFF" "\x55" "\x42" "\x00" ]            (* Magic Number (optional) *)
   { Value }                                  (* Value *)
 ;
 

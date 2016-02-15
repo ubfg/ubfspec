@@ -1,76 +1,58 @@
-# UBF Specification
+# ![UBF][ubf-img]
+
+[ubf-img]: http://static.ubfspec.org/img/ubf.svg
 
 **Universal Binary Format (UBF)**  
-**Version 1.0**  
-Working Draft (2015-12-10)
+A Modular Binary Format For Data Interchange
 
 ## Description
-
-A modular binary format for data interchange.
-
-## Profiles
-
-### Base
-
-See [Profile.Base](./spec/Profile.Base.md)
+_TODO_
 
 ## Modules
 
 ### Base
-
-See [Module.Base](./spec/Module.Base.md)
-
-### Chunks
-
-See [Module.Chunks](./spec/Module.Chunks.md)
-
-### Constant Pool
-
-See [Module.ConstantPool](./spec/Module.ConstantPool.md)
+See [`Base`](./modules/Base.md)
 
 ### Context
+See [`Context`](./modules/Context.md)
 
-See [Module.Context](./spec/Module.Context.md)
+### Chunks
+See [`Chunks`](./modules/Chunks.md)
+
+### Constant Pool
+See [`ConstantPool`](./modules/ConstantPool.md)
 
 ### Custom Types
-
-See Module.CustomTypes
+_TODO_
 
 ### Metadata
-
-See Module.Metadata
+_TODO_
 
 ### Structs
-
-See Module.Structs
+_TODO_
 
 ## Information
 
-**Type of Format**
-
+##### Type of Format
 `Data Interchange`
 
-**Media Type**
-
+##### Media Type
 `application/ubf`
 
-**File Extension**
-
+##### File Extension
 `*.ubf`
 
-**Endianness**
-
+##### Endianness
 [`big-endian`](https://en.wikipedia.org/wiki/Endianness#Big-endian)
-
-## Notes
 
 ## Implementations
 
-### JavaScript (ECMAScript)
+#### JavaScript (ECMAScript)
 
-**[js-ubf](https://github.com/ubfg/js-ubf)**  
+##### [js-ubf](https://github.com/ubfg/js-ubf)
+_Current Reference Implementation_
 
-| Component    | Implements |
-|--------------|------------|
-| `Parser`     | `Profile.Base` |
-| `Binarifier` | `Profile.Base` |
+- **Parser**  
+  `Base`, `Context`, `Chunks`, `ConstantPool`
+- **Binarifier**  
+  `Base`
